@@ -1,0 +1,24 @@
+<resources>
+
+    <color name="black_overlay">#66000000</color>
+
+    <color name = "screen_background_crono_running">#ffff00</color>
+    <color name = "screen_background_crono_stopped">#ff0000</color>
+
+    <color name = "fab_color_pressed">#0000ff</color>
+    <color name = "fab_color_normal">#14d605</color>
+
+    <color name = "text_color">#000000</color>
+
+
+
+    <color name="primary">#3F51B5</color>
+    <color name="primary_dark">#303F9F</color>
+    <color name="primary_light">#7dd8fd</color>
+    <color name="icon_color">#fd00ef</color>
+    <color name="accent">#03ff08</color>
+    <color name="primary_text">#212121</color>
+    <color name="secondary_text">#727272</color>
+    <color name="icons">#404040</color>
+    <color name="divider">#B6B6B6</color>
+</resources>

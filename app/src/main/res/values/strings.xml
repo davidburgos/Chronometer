@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Chronometer</string>
+
+    <string name="button_start">Start</string>
+    <string name="stop_button">Stop</string>
+    <string name="reset_button">Reset</string>
+    <string name="button_pause">Pause</string>
+    <string name="stop_resume">Resume</string>
+    <string name="fullscreen">Full Screen</string>
+</resources>
