@@ -1,0 +1,59 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/rLActHomeBackground"
+    android:background="@color/main_background_stopped"
+    tools:context=".MainActivity">
+
+    <com.test.kogi.android6.cronometro.util.Chronometer
+        android:id="@+id/chronometer"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/chrono_height"
+        android:keepScreenOn="true"
+        android:textColor="@color/main_text_color"
+        android:textStyle="bold"
+        android:textSize="@dimen/default_extra_large_size"
+        android:gravity="center_vertical|center_horizontal"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="true"
+        android:orientation="vertical"
+        android:layout_below="@+id/chronometer"
+        android:background="@color/shadow_black_overlay">
+
+        <LinearLayout
+            style="?metaButtonBarStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|center_horizontal"
+            android:background="@color/shadow_black_overlay"
+            android:orientation="horizontal"
+            tools:ignore="UselessParent">
+
+            <Button
+                style="@style/buttonStyle"
+                android:id="@+id/bActHomeStart"
+                android:layout_width="@dimen/button_home_layout_width"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/home_start_button" />
+
+            <Button
+                style="@style/buttonStyle"
+                android:id="@+id/bActHomeReset"
+                android:layout_width="@dimen/button_home_layout_width"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/home_reset_button"
+                />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

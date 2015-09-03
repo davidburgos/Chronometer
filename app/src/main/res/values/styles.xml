@@ -1,0 +1,74 @@
+<resources>
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="android:Theme.Holo.Light.DarkActionBar">
+        <item name="android:windowActionBarOverlay">true</item>
+        <item name="android:actionBarStyle">@style/ActionBarStyle</item>
+        <item name="colorPrimary">@color/main_primary_color</item>
+        <item name="colorPrimaryDark">@color/main_primary_dark_color</item>
+        <item name="colorAccent">@color/main_accent_color</item>
+        <item name="android:textColorHighlight">@color/main_primary_light_color</item>
+        <item name="android:textColorPrimary">@color/main_primary_text_color</item>
+        <item name="android:textColorSecondary">@color/main_secondary_text_color</item>
+        <item name="android:textColor">@color/main_text_color</item>
+        <item name="android:colorBackground">@color/main_secondary_text_color</item>
+        <item name="android:windowBackground">@color/main_primary_light_color</item>
+        <item name="windowActionBar">true</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+
+    <style name="ActionBarStyle" parent="@android:style/Widget.Holo.ActionBar">
+        <item name="android:background">@android:color/black</item>
+        <item name="android:titleTextStyle">@style/ActionBar.TitleTextStyle</item>
+    </style>
+
+    <style name="ActionBar.TitleTextStyle" parent="@android:style/TextAppearance.Holo.Widget.ActionBar.Title">
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+
+    <style name="LargeTextStyle" parent="@android:style/Widget.TextView">
+        <item name="android:textAppearance">?android:attr/textAppearanceLarge</item>
+        <item name="android:includeFontPadding">false</item>
+    </style>
+
+    <style name="MediumTextStyle" parent="@android:style/Widget.TextView">
+        <item name="android:textAppearance">?android:attr/textAppearanceMedium</item>
+        <item name="android:includeFontPadding">false</item>
+    </style>
+
+    <style name="SmallTextStyle" parent="@android:style/Widget.TextView">
+        <item name="android:textAppearance">?android:attr/textAppearanceSmall</item>
+        <item name="android:includeFontPadding">false</item>
+    </style>
+
+    <style name="FullscreenTheme" parent="android:Theme.NoTitleBar">
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowBackground">@null</item>
+        <item name="metaButtonBarStyle">@style/ButtonBar</item>
+        <item name="metaButtonBarButtonStyle">@style/ButtonBarButton</item>
+    </style>
+
+    <!-- Backward-compatible version of ?android:attr/buttonBarStyle -->
+    <style name="ButtonBar">
+        <item name="android:paddingLeft">@dimen/button_padding_left</item>
+        <item name="android:paddingTop">@dimen/button_padding_top</item>
+        <item name="android:paddingRight">@dimen/button_padding_right</item>
+        <item name="android:paddingBottom">@dimen/button_padding_bottom</item>
+        <item name="android:background">@android:drawable/bottom_bar</item>
+    </style>
+
+    <!-- Backward-compatible version of ?android:attr/buttonBarButtonStyle -->
+    <style name="ButtonBarButton" />
+
+    <style name="buttonStyle">
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:layout_margin">@dimen/button_layout_margin</item>
+        <item name="android:gravity">center_horizontal|center_vertical</item>
+        <item name="android:textColor">@color/primary_material_light</item>
+        <item name="android:color">@color/main_accent_color</item>
+        <item name="android:textSize">@dimen/default_text_size</item>
+        <item name="android:background">@drawable/button_selector</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+
+</resources>

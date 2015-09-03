@@ -1,0 +1,22 @@
+<resources>
+
+    <!--Default-->
+    <dimen name="default_extra_small_size">2dp</dimen>
+    <dimen name="default_small_size">4dp</dimen>
+    <dimen name="default_medium_size">8dp</dimen>
+    <dimen name="default_large_size">16dp</dimen>
+    <dimen name="default_extra_large_size">40sp</dimen>
+    <dimen name="default_text_size">25sp</dimen>
+
+    <!--Buttons-->
+    <dimen name="button_padding_left">2dp</dimen>
+    <dimen name="button_padding_top">5dp</dimen>
+    <dimen name="button_padding_right">2dp</dimen>
+    <dimen name="button_padding_bottom">0dp</dimen>
+    <dimen name="button_layout_margin">16dp</dimen>
+    <dimen name="button_home_layout_width">0dp</dimen>
+
+    <!--Chronometer-->
+    <dimen name="chrono_height">200dp</dimen>
+
+</resources>

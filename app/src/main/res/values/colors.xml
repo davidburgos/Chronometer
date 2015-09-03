@@ -1,0 +1,31 @@
+<resources>
+
+    <!--Test-->
+    <color name="test_color_blue">#0000FF</color>
+    <color name="test_color_red">#FF0000</color>
+    <color name="test_color_green">#00FF00</color>
+    <color name="test_color_yellow">#ffff00</color>
+
+    <!--Shadow-background-overlay-->
+    <color name="shadow_black_overlay">#66000000</color>
+
+    <!--Activity-background-->
+    <color name = "main_background_running">@color/test_color_yellow</color>
+    <color name = "main_background_stopped">@color/test_color_red</color>
+
+    <!--buttons-->
+    <color name = "home_button_background_pressed">@color/test_color_blue</color>
+    <color name = "home_button_background_normal">@color/test_color_green</color>
+
+    <!--General-->
+    <color name="main_primary_color">#3F51B5</color>
+    <color name="main_primary_dark_color">#303F9F</color>
+    <color name="main_primary_light_color">#7dd8fd</color>
+    <color name="main_icon_color">#fd00ef</color>
+    <color name="main_accent_color">#03ff08</color>
+    <color name="main_primary_text_color">#212121</color>
+    <color name="main_secondary_text_color">#727272</color>
+    <color name="main_text_color">#000000</color>
+    <color name="main_divider_color">#B6B6B6</color>
+
+</resources>
