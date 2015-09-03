@@ -20,10 +20,10 @@ public class Chronometer extends TextView {
     }
 
     private long mBase;
-    private long paused=0;
+    private long paused = 0;
     private boolean mVisible;
     private boolean mStarted;
-    private boolean mRunning;
+    private static boolean mRunning;
     private OnChronometerTickListener mOnChronometerTickListener;
   //  private SimpleDateFormat TimeFormatter = new SimpleDateFormat("dd:HH:mm:ss:SSS", Locale.US);
 
@@ -42,7 +42,6 @@ public class Chronometer extends TextView {
 
     public Chronometer(Context context, AttributeSet attrs, int defStyle) {
         super(context, attrs, defStyle);
-
         init();
     }
 
@@ -118,16 +117,16 @@ public class Chronometer extends TextView {
         DecimalFormat msf = new DecimalFormat("000");
 
         int day = (int)(timeElapsed / (86400 * 1000));
-        int remaining = (int)(timeElapsed % (86400 * 1000));
+        int remaining;
 
         int hours = (int)(timeElapsed / (3600 * 1000));
         remaining = (int)(timeElapsed % (3600 * 1000));
 
-        int minutes = (int)(remaining / (60 * 1000));
-        remaining = (int)(remaining % (60 * 1000));
+        int minutes = remaining / (60 * 1000);
+        remaining = remaining % (60 * 1000);
 
-        int seconds = (int)(remaining / 1000);
-        remaining = (int)(remaining % 1000);
+        int seconds = remaining / 1000;
+        remaining = remaining % 1000;
 
         int milliseconds = remaining;
 
